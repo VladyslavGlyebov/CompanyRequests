@@ -1,0 +1,12 @@
+{% extends "app/layout.html" %}
+{% block title %}Delete activ: {% endblock %}
+
+{% block content %}
+<p>{{ activ.department.name }}</p>
+<p>{{ activ.cub_number }}</p>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Delete" />
+</form>
+{% endblock %}

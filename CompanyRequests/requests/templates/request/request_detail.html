@@ -1,0 +1,11 @@
+{% extends "app/layout.html" %}
+{% block title %} Detail request: {% endblock %}
+
+{% block content %}
+<p>Name: {{ object.name }}</p>
+<p>Description: {{ object.description }}</p>
+<p>Comment: {{ object.comment }}</p>
+<p>Activ: {{ object.activ.cub_number }}</p>
+<p>Category: {{ object.category.name }}</p>
+<p>Executor: {{ object.executor.user.username }}</p>
+{% endblock %}
